@@ -12,11 +12,13 @@ mv docker-compose.yml jenkins
 Change directory
 cd jenkins
 
-move out from jenkins
-cd ..
 
 See what is inside the script file
 cat docker-compose.yml
+
+move out from jenkins
+cd ..
+
 
 
 Install docker compose
