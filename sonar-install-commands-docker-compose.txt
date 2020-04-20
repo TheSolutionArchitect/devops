@@ -1,3 +1,4 @@
+sudo apt-get update
 
 Download the script file
 wget https://raw.githubusercontent.com/awstechguide/devops/master/docker-compose.yml
@@ -11,22 +12,24 @@ mv docker-compose.yml jenkins
 Change directory
 cd jenkins
 
+move out from jenkins
+cd ..
+
 See what is inside the script file
 cat docker-compose.yml
 
 
 Install docker compose
-curl L https://github.com/docker/compose/releases/download/1.14.0/docker compose --`uname s` uname m` > usr /local/bin/docker compose
-
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 Change permission
-chmod +x usr /local/bin/docker compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 Check the version
-docker-compose version
+docker–compose –version
 
 Bring up docker compose
-docker-compose up d
+sudo docker–compose up
 
 Check the docker process
 docker ps
